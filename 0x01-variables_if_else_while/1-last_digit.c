@@ -8,27 +8,26 @@
  *
  * Description: this if/else statement declares if the given input
  * is great/less of a random number
- * return 0 for success
+ * Return: Always 0 for success
  */
 int main(void)
 {
-	int n;
+	int n, l;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
-
-	scanf("%d", &n);
+	l = n % 10;
 	{
 		if (n > 5)
-		printf("Last digit of n is %d and is greater than 5\n", n);
+		printf("Last digit of %d is %d and is greater than 5\n", n, l);
 	}
 	{
 		if (n == 0)
-		printf("Last digit of n is %d and is 0\n", n);
+		printf("Last digit of %d is %d and is 0\n", n, l);
 	}
 	{
 		if (n < 6 &&! 0)
-		printf("Last digit of n is %d and is less than 6 and not 0\n", n);
+		printf("Last digit of %d is %d and is less than 6 and not 0\n", n, l);
 	}
 	return (0);
 }
