@@ -2,8 +2,13 @@
 #include <time.h>
 #include <stdio.h>
 
-/* 
- * main - program starts here
+/**
+ * main - Positive or Negative - print sign of random number
+ * @void: Empty parameter list for main
+ *
+ * Description: this if/else statement delares the sign (positive
+ * or negative) of a random number. It also states if the value
+ * is zero.
  *
  * return 0 (success)
  */
@@ -13,7 +18,7 @@ int main(void)
 	int n;
 
 	srand(time(0));
-	n = rand() - RAND_MAX / 2;	
+	n = rand() - RAND_MAX / 2;
 	scanf("%d", &n);
 	{
 		if (n > 0)
