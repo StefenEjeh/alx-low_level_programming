@@ -10,7 +10,7 @@
  * or negative) of a random number. It also states if the value
  * is zero.
  *
- * return: 0 for success
+ * Return: 0 for success
  */
 
 int main(void)
