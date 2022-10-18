@@ -9,13 +9,15 @@
  */
 int main(void)
 {
-	char ch = 'a';
-	
-	while (ch <= 'z' ch++)
-		if (ch != 'q' && ch != 'e')
+	int i;
+
+	for (i = 97; i < 123; i++)
 	{
-		putchar(ch);
+		if (i != 101 && i != 113)
+		{
+			putchar(i);
+		}
 	}
 	putchar('\n');
-	return(0);
+	return (0);
 }
